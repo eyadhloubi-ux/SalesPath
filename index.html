@@ -132,9 +132,13 @@ h2.t em{font-style:normal;color:var(--acc)}
 .bar i{position:absolute;inset:0 0 0 auto;width:0;border-radius:11px;background:linear-gradient(270deg,rgba(47,227,165,.85),rgba(74,99,255,.6));transition:width 1.2s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0)*1ms)}
 .slide.in .bar i{width:var(--w)}
 .bar em{position:absolute;inset:0;display:flex;align-items:center;padding:0 16px;font:800 18px var(--display);font-style:normal;direction:ltr;justify-content:flex-start;color:#fff}
-.fr.flt .nm b::after{content:"تصفية";margin-right:8px;font-size:11px;font-weight:800;color:var(--acc2);background:rgba(47,227,165,.12);padding:2px 8px;border-radius:99px;vertical-align:middle}
+.fr.flt .nm b::after{content:"تصفية";display:inline-block;line-height:1.5;margin-right:10px;font-size:11px;font-weight:800;color:var(--acc2);background:rgba(47,227,165,.12);padding:2px 8px;border-radius:99px;vertical-align:middle}
 .fr.open .bar i{background:repeating-linear-gradient(-45deg,rgba(124,140,255,.35) 0 10px,rgba(124,140,255,.18) 10px 20px)}
 
+.fr.fin .bar{height:52px;border-color:rgba(47,227,165,.45)}
+.fr.fin .bar i{background:linear-gradient(270deg,#2FE3A5,#9BF5D3);box-shadow:0 0 22px rgba(47,227,165,.45)}
+.fr.fin .bar em{font-size:26px;color:#04261A;justify-content:flex-end}
+.fr.fin .nm b{font-size:clamp(18px,1.8vw,23px);color:var(--acc)}
 /* 5 SalesStart */
 .days{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .day{padding:24px 22px;border-radius:22px;border:1px solid var(--line);background:var(--card)}
@@ -248,7 +252,7 @@ h2.t em{font-style:normal;color:var(--acc)}
 .io s{color:var(--muted);text-decoration:none;font-weight:600}
 .io b{color:var(--acc)}
 .f2 .bar{height:34px}
-.f2.flt .nm b::after{content:"تصفية";margin-right:8px;font-size:11px;font-weight:800;color:var(--acc2);background:rgba(47,227,165,.12);padding:2px 8px;border-radius:99px;vertical-align:middle}
+.f2.flt .nm b::after{content:"تصفية";display:inline-block;line-height:1.5;margin-right:10px;font-size:11px;font-weight:800;color:var(--acc2);background:rgba(47,227,165,.12);padding:2px 8px;border-radius:99px;vertical-align:middle}
 .f2.open .bar i{background:repeating-linear-gradient(-45deg,rgba(124,140,255,.35) 0 10px,rgba(124,140,255,.18) 10px 20px)}
 .f2.bank{margin-top:6px;padding-top:12px;border-top:1px dashed var(--line)}
 .f2.bank .bar i{background:repeating-linear-gradient(-45deg,rgba(47,227,165,.28) 0 8px,rgba(47,227,165,.1) 8px 16px)}
@@ -327,7 +331,7 @@ h2.t em{font-style:normal;color:var(--acc)}
   <div class="wrap cover">
     <div class="pp rv"><span>DOMAINS</span><i></i><span>STB</span></div>
     <h1 class="wm rv" style="--d:120"><span>Sales</span><span class="p">Path</span></h1>
-    <p class="sub rv" style="--d:240">مسار لاستقطاب طلاب الجامعة وتأهيلهم للعمل في المبيعات</p>
+    <p class="sub rv" style="--d:240">مسار لاستقطاب طلاب الجامعة وخريجيها وتأهيلهم للعمل في المبيعات</p>
     <div class="route rv" style="--d:380">
       <svg viewBox="0 0 1200 190" aria-hidden="true">
         <defs>
@@ -350,7 +354,7 @@ h2.t em{font-style:normal;color:var(--acc)}
   <div class="wrap">
     <p class="kick rv"><span class="n">02</span>الفكرة</p>
     <h2 class="t rv" style="--d:80">طاقات الجامعة… <em>في قلب السوق</em></h2>
-    <p class="lead rv" style="--d:160">فرصة عمل حقيقية في المبيعات لطلاب الجامعة، يكتسبون فيها دخلاً وخبرة إلى جانب دراستهم، ضمن شركات مجموعة <span class="lat">STB</span> وبتنظيم <span class="lat">DOMAINS</span>.</p>
+    <p class="lead rv" style="--d:160">فرصة عمل حقيقية في المبيعات لطلاب الجامعة وخريجيها: دخل وخبرة إلى جانب الدراسة، أو انطلاقة مهنية بعد التخرّج، ضمن شركات مجموعة <span class="lat">STB</span> وبتنظيم <span class="lat">DOMAINS</span>.</p>
     <div class="stats">
       <div class="stat rv" style="--d:260"><b data-count="150">150</b><span>مشاركاً في المرحلة الأولى</span></div>
       <div class="stat rv" style="--d:360"><b data-count="100">100</b><span>في التدريب الميداني</span></div>
@@ -364,7 +368,7 @@ h2.t em{font-style:normal;color:var(--acc)}
   <span class="bign">03</span>
   <div class="wrap">
     <p class="kick rv"><span class="n">03</span>الفئة المستهدفة</p>
-    <h2 class="t rv" style="--d:80">طلاب <em>الجامعة</em></h2>
+    <h2 class="t rv" style="--d:80">طلاب الجامعة <em>وخريجوها</em></h2>
     <div class="aud2">
       <div>
         <p class="lab rv" style="--d:160">الاختصاصات الأنسب</p>
@@ -381,7 +385,7 @@ h2.t em{font-style:normal;color:var(--acc)}
       <div>
         <p class="lab rv" style="--d:200">نبحث عن</p>
         <div class="traits">
-          <div class="tr rv" style="--d:240"><i><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></i>التواصل الواضح</div>
+          <div class="tr rv" style="--d:240"><i><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></i>مهارات التواصل</div>
           <div class="tr rv" style="--d:300"><i><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></i>الحماس والمبادرة</div>
           <div class="tr rv" style="--d:360"><i><svg viewBox="0 0 24 24"><path d="M7 11l4 4 7-8"/><circle cx="12" cy="12" r="10"/></svg></i>القدرة على الإقناع</div>
           <div class="tr rv" style="--d:420"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i>الالتزام والانضباط</div>
@@ -400,12 +404,12 @@ h2.t em{font-style:normal;color:var(--acc)}
     <p class="kick rv"><span class="n">04</span>مراحل المسار</p>
     <h2 class="t rv" style="--d:80">ست مراحل <em>من التسجيل إلى التعيين</em></h2>
     <div class="fun">
-      <div class="fr open rv" style="--d:160"><span class="sn">01</span><div class="nm"><b>التسجيل</b><small>باب مفتوح لطلاب الجامعة</small></div><div class="bar"><i style="--w:100%;--d:300"></i><em>∞</em></div></div>
+      <div class="fr open rv" style="--d:160"><span class="sn">01</span><div class="nm"><b>التسجيل</b><small>باب مفتوح للطلاب والخريجين</small></div><div class="bar"><i style="--w:100%;--d:300"></i><em>∞</em></div></div>
       <div class="fr flt rv" style="--d:230"><span class="sn">02</span><div class="nm"><b>الاستبيان والفرز</b><small>جاهزية والتزام</small></div><div class="bar"><i style="--w:75%;--d:420"></i><em>150</em></div></div>
       <div class="fr rv" style="--d:300"><span class="sn">03</span><div class="nm"><b class="lat" style="text-align:right">SalesStart</b><small>ورشة تهيئة · 3 أيام</small></div><div class="bar"><i style="--w:75%;--d:540"></i><em>150</em></div></div>
       <div class="fr flt rv" style="--d:370"><span class="sn">04</span><div class="nm"><b>المقابلات</b><small>لجنة مشتركة</small></div><div class="bar"><i style="--w:75%;--d:660"></i><em>150</em></div></div>
       <div class="fr flt rv" style="--d:440"><span class="sn">05</span><div class="nm"><b>التدريب الميداني</b><small>3 أسابيع · تقييم أسبوعي</small></div><div class="bar"><i style="--w:50%;--d:780"></i><em>100</em></div></div>
-      <div class="fr rv" style="--d:510"><span class="sn">06</span><div class="nm"><b>التعيين</b><small>عقد مباشر في شركات STB</small></div><div class="bar"><i style="--w:25%;--d:900"></i><em>50</em></div></div>
+      <div class="fr fin rv" style="--d:510"><span class="sn">06</span><div class="nm"><b>التعيين</b><small>عقد مباشر في شركات STB</small></div><div class="bar"><i style="--w:38%;--d:900"></i><em>50+</em></div></div>
     </div>
   </div>
 </section>
