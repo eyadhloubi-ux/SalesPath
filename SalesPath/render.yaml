@@ -1,0 +1,12 @@
+# Render Blueprint - SalesPath presentation (static site)
+services:
+  - type: web
+    name: salespath
+    runtime: static
+    buildCommand: echo "static site - no build needed"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=600
